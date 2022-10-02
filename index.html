@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax Scrolling Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+            <h2 id="text">Parallax Website</h2>
+            <img src="monutain_01.png" id="m1">
+            <img src="trees_02.png" id="t2">
+            <img src="monutain_02.png" id="m2">
+            <img src="trees_01.png" id="t1">
+            <img src="man.png" id="man">
+            <img src="plants.png" id="plants">
+        </section>
+        <section class="sec">
+            <h2>Parallax Scrolling Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa exercitationem deserunt beatae animi incidunt, vero doloribus illum? Perferendis autem eaque reiciendis repudiandae, impedit aspernatur dolor omnis voluptatibus sequi, explicabo ducimus rem. Illum in consequuntur fugit atque deserunt odio dolores voluptas molestias non unde eligendi veritatis provident, sunt, delectus quasi distinctio. Ea iste quidem magnam accusantium quia? Ducimus, voluptatem? Beatae expedita, aliquid laudantium hic natus repellat porro et nihil temporibus officiis sit necessitatibus, similique vitae reprehenderit explicabo, iure error eligendi id itaque cumque ut. Officiis reiciendis nihil quis? Beatae quos error commodi nostrum saepe, adipisci et nemo dolorem recusandae architecto explicabo repellendus iusto quasi! Quos neque harum amet quasi officiis perspiciatis perferendis inventore adipisci maiores, non sequi dolor soluta corrupti repellendus delectus dolores officia error atque nihil debitis unde esse fugit sapiente nisi. Itaque vel ab dolores aperiam in, reprehenderit velit deleniti atque nam qui blanditiis optio, aliquid culpa repellendus doloremque dolorem nulla? Quasi atque laboriosam, suscipit architecto cumque repellat modi tenetur delectus cupiditate aspernatur soluta fuga, nisi obcaecati ad ipsam enim ab similique, mollitia explicabo? Totam suscipit harum unde et, iste, eligendi beatae enim maxime sapiente illo ullam amet doloremque quis. Corrupti blanditiis suscipit quidem assumenda quae eum nesciunt magni?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia, quibusdam at soluta esse recusandae iusto cupiditate incidunt atque dolores repellat odit adipisci laborum voluptates ab aperiam sapiente? Vel hic qui expedita modi voluptatibus quas perspiciatis, rem blanditiis, quisquam dolor dolores aperiam? Repudiandae eligendi suscipit deserunt assumenda distinctio sapiente laboriosam est eaque odio praesentium atque rerum itaque mollitia, explicabo dolorum rem dolore hic iure sit non eum recusandae saepe! Distinctio perspiciatis ducimus natus dolorem! Est reiciendis voluptas sit veniam tempora eius consequatur ratione error consequuntur. Nesciunt dignissimos deleniti nobis sapiente voluptatibus accusamus sint assumenda excepturi molestiae magnam, adipisci delectus perspiciatis placeat itaque dolore quaerat impedit illum blanditiis quis debitis asperiores nulla vel. Aliquam maxime corrupti possimus consequatur, voluptatem iste vero culpa vel optio. Accusantium architecto iusto necessitatibus quisquam dolorum omnis expedita ipsam, eos repudiandae ab, laudantium veniam quaerat ratione quia modi natus dolore magnam voluptatibus, labore deserunt vero eaque harum nisi doloribus! Expedita cumque pariatur, perferendis cupiditate eos voluptatum deserunt illum ratione asperiores temporibus quaerat minima officiis at incidunt et eveniet voluptatibus odit aspernatur ad animi corporis aliquam! Reprehenderit possimus, rem quae error rerum numquam nobis distinctio dicta iste est quis maiores delectus sit. Quibusdam velit nemo distinctio voluptas quia.</p>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.from("#m1",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y: 100,
+            })
+            gsap.from("#m2",{
+                scrollerTrigger : {
+                    scrub: true
+                },
+                y: 50,
+            })
+            gsap.from("#t2", {
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -50,
+            })
+            gsap.from("#t1", {
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: 50,
+            })
+            gsap.from("#man", {
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -250,
+            })
+            gsap.from("#plants", {
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -50,
+            })
+            gsap.from("#text", {
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: 600,
+            })
+        </script>
+    </body>
+</html>
